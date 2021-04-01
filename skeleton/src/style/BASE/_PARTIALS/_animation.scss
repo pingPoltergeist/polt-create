@@ -1,0 +1,40 @@
+.rotating {
+    animation: rotating 5s linear;
+    animation-iteration-count: infinite;
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.scroll-appear-preposition {
+    opacity: 0%;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@-webkit-keyframes bgPulse {
+    0% {background-color: #151619; opacity: 1;}
+    50% {background-color: #1D1E24; opacity: 1; }
+    100% {background-color: #151619; opacity: 1;}
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+

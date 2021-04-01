@@ -1,0 +1,22 @@
+.pointer {
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  transition-property: transform, background-color, backdrop-filter;
+  transform-origin: 100% 100%;
+}
+
+.grown-cursor {
+  transform: scale(2);
+  backdrop-filter: invert(100%);
+}
+
+.white-cursor {
+  background-color: white;
+}

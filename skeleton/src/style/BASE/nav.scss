@@ -1,0 +1,53 @@
+.navbar-desktop {
+
+    backdrop-filter: blur(5px);
+
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+.menu-block {
+    display: flex;
+}
+
+.menu-link-block {
+    list-style: none;
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+.menu-link {
+    margin: 0 10px;
+    color: color(white);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-desktop {
+        padding: 25px 20px;
+    }
+
+    .logo-fan {
+        width: 20px;
+    }
+
+    .logo-text {
+        margin-left: 5px;
+        width: 70px;
+    }
+
+    .menu-link {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+}

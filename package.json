@@ -1,6 +1,6 @@
 {
   "name": "poltergeist-create",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Poltergeist Front-End Framework",
   "main": "./commands/polt-create.js",
   "scripts": {

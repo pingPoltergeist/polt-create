@@ -8,4 +8,17 @@ module.exports = merge(common, {
         filename: "[name]-bundle.js",
         path: path.resolve(__dirname, "../dist")
     },
+    module: {
+        rules: [
+            // SCSS
+            {
+                test: /\.scss$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
+            }
+        ]
+    }
 })

@@ -1,0 +1,6 @@
+@forward "_PARTIALS/fonts";
+@forward "_PARTIALS/colors";
+@forward "_PARTIALS/mixins";
+@use "_PARTIALS/animation";
+@use "_COMPONENTS/cursor";
+@use "_COMPONENTS/alert";

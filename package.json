@@ -1,0 +1,18 @@
+{
+  "name": "poltergeist",
+  "version": "1.0.0",
+  "description": "Poltergeist Front-End Framework",
+  "main": "./commands/polt-create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cli.js"
+  },
+  "author": "Subhajit Kundu",
+  "license": "ISC",
+  "bin": {
+    "polt-create": "./commands/polt-create.js"
+  },
+  "dependencies": {
+    "copy": "^0.3.2"
+  }
+}

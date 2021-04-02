@@ -13,6 +13,7 @@
     "polt-create": "./commands/polt-create.js"
   },
   "dependencies": {
-    "copy": "^0.3.2"
+    "copy": "^0.3.2",
+    "loading-cli": "^1.1.0"
   }
 }

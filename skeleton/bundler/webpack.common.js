@@ -55,6 +55,23 @@ module.exports = {
                 ]
             },
 
+            // Videos
+            {
+                test: /\.(mp4|avi|webm)$/,
+                use:
+                    [
+                        {
+                            loader: 'file-loader',
+                            options:
+                                {
+                                    name: '[name]-[hash].[ext]',
+                                    publicPath: 'assets/videos/',
+                                    outputPath: 'assets/videos/'
+                                }
+                        }
+                    ]
+            },
+
             // Fonts
             {
                 test: /\.(ttf|eot|woff|woff2)$/,

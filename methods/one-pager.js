@@ -3,7 +3,10 @@ const { resolve } = require('path')
 const { rename } = require('fs')
 const { exec } = require("child_process");
 
+const loading =  require('loading-cli');
+
 exports.onePager = function() {
+
 
     console.log(`STATUS: Generating File Structure . . .`);
 
@@ -16,12 +19,16 @@ exports.onePager = function() {
         rename('package.txt', 'package.json', (err) => {
             if (err) throw err;
             console.log(`STATUS: package.json created . . .`)
-            console.log(`STATUS: Installing dependencies (Please be patient) . . .`)
+            const load = loading(`STATUS: Installing dependencies (Please be patient) . . .`).start()
 
             exec("npm install", (err, stdout, stderr) => {
                 if (err) throw err
 
-                console.log(`\n || INSTALLATION SUCCESSFUL || \n`)    
+                load.stop()
+                console.log(`STATUS: Installing dependencies (Please be patient) . . .`)
+                console.log(`Dependencies installed successfully . . .`)
+
+                console.log(`\n || INSTALLATION SUCCESSFUL || \n`)
                 console.log(`STATUS: Initiating Development Server . . .`)
                 console.log('Press CTRL + C to stop');
 

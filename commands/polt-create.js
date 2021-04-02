@@ -11,7 +11,7 @@ if(args.length >= 2) {
 }
 
 else {
-    if(args[0] == 'onepager' || args[0] == 'one-pager' || args[0] == 'onePager'){
+    if(args[0] === 'onepager' || args[0] === 'one-pager' || args[0] === 'onePager'){
         return onePager()
     }
     

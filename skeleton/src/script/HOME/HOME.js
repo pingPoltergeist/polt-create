@@ -1,9 +1,9 @@
 
 // Import the object from other scripts of BASE
 // Follow ./common.js for reference
-import { Common } from './common.js'
+import { Home } from './home-script.js'
 
-export function BASE() {
+export function HOME() {
 
     const scriptArray = {
 
@@ -11,9 +11,9 @@ export function BASE() {
         // Follow the object 'Common' for reference
 
         common: function() {
-                    const common = new Common()
-                    common.render()
-                },
+            const home = new Home()
+            home.render()
+        },
 
     }
 

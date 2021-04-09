@@ -1,8 +1,8 @@
 
-export function Common() {
+export function Home() {
 
     this.sayHello = function() {
-        console.log('Welcome to POLTERGEIST One-Page App');
+        console.log('The script from your folder HOME is working');
     }
 
     // Execute all
@@ -15,4 +15,3 @@ export function Common() {
         }
     }
 }
-

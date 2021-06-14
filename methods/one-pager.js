@@ -2,7 +2,6 @@ const copy = require('copy');
 const { resolve } = require('path')
 const { rename } = require('fs')
 const { exec } = require("child_process");
-
 const loading =  require('loading-cli');
 
 exports.onePager = function() {
@@ -34,9 +33,9 @@ exports.onePager = function() {
 
                 exec("npm run dev", (err, stdout, stderr) => {
                     if (err) throw err;
-                });
-            });
-        });
-    });
+                })
+            })
+        })
+    })
 
 }

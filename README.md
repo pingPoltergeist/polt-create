@@ -1,10 +1,10 @@
-<section align="center" style="width: 100%">
-    <div style="width: 100%">
+<section align="center">
+    <div align="center">
         <img style="width: 100%" src="https://svgshare.com/i/Y8J.svg" alt="polt-create">
         <br>
         <br>
         <br>
-        <div>
+        <div align="center">
             <a href="https://"><img src="https://img.shields.io/badge/version-v1.1.1-important?style=for-the-badge&logo=git&logoColor=%23ffffff" alt="version - v1.1.1"></a> <a href="https://"><img src="https://img.shields.io/badge/access-In--House-brightgreen?style=for-the-badge&logo=Home+Assistant+Community+Store&logoColor=white" alt="access - In-House"> </a> <a href="https://"><img src="https://img.shields.io/badge/built_on-NPM-blueviolet?style=for-the-badge&logo=npm&logoColor=white" alt="built on - NPM"></a> <a href="https://"><img src="https://img.shields.io/badge/Dependency-NODE_JS-yellowgreen?style=for-the-badge&logo=Node.js&logoColor=white" alt="Dependency - NODE JS"></a>
         </div>
     </div>

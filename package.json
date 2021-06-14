@@ -1,10 +1,10 @@
 {
-  "name": "polt-create",
+  "name": "@pingPoltergeist/polt-create",
   "version": "1.1.1",
   "description": "Poltergeist Front-End Framework",
   "main": "./commands/polt-create.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@pingPoltergeist"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,82 @@
+@use "../BASE/partials" as *;
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  padding: 120px;
+  background: #FFFBF1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @include laptop {
+    padding: 50px;
+  }
+
+  @include tablet {
+    width: 100%;
+    align-items: center;
+  }
+
+  @include mobile-l {
+    padding: 20px;
+  }
+}
+
+.heading {
+  @include font($weight:500, $family:tertiary, $size:52px);
+  margin-bottom: 40px;
+
+  @include laptop {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include mobile-l {
+    font-size: 25px;
+  }
+}
+
+.content {
+  @include font($weight:normal, $family:secondary, $size:18px);
+  margin-bottom: 35px;
+
+  @include laptop {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include mobile-l {
+    font-size: 10px;
+  }
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  background: url("../../media/bg.svg") center left;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.techs {
+  max-width: 70%;
+}

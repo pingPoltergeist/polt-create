@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'HomePage';
+  src:url('/src/font/homepage-baukasten/HomepageBaukasten-Bold1.ttf.woff') format('woff'),
+  url('/src/font/homepage-baukasten/HomepageBaukasten-Bold1.ttf.svg#HomepageBaukasten-Bold1') format('svg'),
+  url('/src/font/homepage-baukasten/HomepageBaukasten-Bold1.ttf.eot'),
+  url('/src/font/homepage-baukasten/HomepageBaukasten-Bold1.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$fonts: (
+  primary: "Poppins",
+  secondary: 'Open Sans',
+  tertiary: 'HomePage',
+  satisfy: "Satisfy"
+);
+
+@function fontFamily($font-var) {
+  @return map-get($fonts, $font-var)
+};

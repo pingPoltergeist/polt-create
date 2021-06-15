@@ -1,0 +1,47 @@
+@use "../global/partials" as *;
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  @include tablet {
+    gap: 2rem;
+  }
+}
+
+.main_heading {
+  // Text Background
+  background: linear-gradient(133deg, #8A2387 0%, #E94057 50%, #F27121 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 10rem;
+  font-weight: 900;
+
+  max-width: 60vw;
+  text-align: center;
+
+  @include tablet {
+    font-size: 5rem;
+    max-width: 90vw;
+  }
+}
+
+.main_description {
+  font-size: 2rem;
+  max-width: 50vw;
+  text-align: center;
+  color: color(dark);
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 1.4rem;
+    max-width: 90vw;
+  }
+}
+
+

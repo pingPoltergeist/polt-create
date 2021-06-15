@@ -12,7 +12,7 @@
 
 <div align="center">
 <h1>Poltergeist Boilerplate Framework</h1>
-This is the in-house Poltergeist Boilerplate project creation framework currently supporting a handful of frontend project setup. This contains a setup with Webpack configured legacy frontend application and a scalable React application setup with Next JS support coming very soon.
+This is the in-house Poltergeist Boilerplate project creation framework currently supporting a handful of frontend project setup. This contains a setup with Webpack configured legacy frontend application and a scalable React application setup and a scalable React application setup built on Next JS.
 </div>
 
 <br>
@@ -36,7 +36,7 @@ This is the in-house Poltergeist Boilerplate project creation framework currentl
 
 2. **React App:** To create a React application, navigate to the project directory (ideally empty) and run the command in a shell `polt-create reactApp`. File structure would be generated and dependencies would be installed. Then the application would automatically open up in a browser window.
 
-3. **Next App (soon):** To create a Next JS application, navigate to the project directory (ideally empty) and run the command in a shell `polt-create nextApp`. File structure would be generated and dependencies would be installed. Then the application would automatically open up in a browser window.
+3. **Next App:** To create a Next JS application, navigate to the project directory (ideally empty) and run the command in a shell `polt-create nextApp`. File structure would be generated and dependencies would be installed. Then the application would automatically open up in a browser window.
 
 <br>
 <br>
@@ -47,7 +47,7 @@ This is the in-house Poltergeist Boilerplate project creation framework currentl
 
 2. `polt-create reactApp` for React app
 
-3. `polt-create nextApp` for Next JS app (soon)
+3. `polt-create nextApp` for Next JS app
 
 <br>
 <br>

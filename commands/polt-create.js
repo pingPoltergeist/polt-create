@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const {nextApp} = require("../methods/next-app");
 const { onePager } = require('../methods/one-pager')
 const { reactApp } = require('../methods/react-app')
 
@@ -18,6 +19,10 @@ else {
 
     if(args[0] === 'reactapp' || args[0] === 'react-app' || args[0] === 'reactApp'){
         return reactApp()
+    }
+
+    if(args[0] === 'nextapp' || args[0] === 'next-app' || args[0] === 'nextApp'){
+        return nextApp()
     }
     
     else {

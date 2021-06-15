@@ -5,13 +5,13 @@ const { exec } = require("child_process");
 
 const loading =  require('loading-cli');
 
-exports.reactApp = function() {
+exports.reactApp = () => {
 
 
-    console.log(`STATUS: Generating File Structure . . .`);
+    console.log(`STATUS: Generating File Structure . . .`)
 
-    copy(resolve(__dirname, '../react-app/**/*'), '.', function(err, files) {
-        if (err) throw err;
+    copy(resolve(__dirname, '../react-app/**/*'), '.', (err, files) => {
+        if (err) throw err
 
         console.log(`STATUS: File Structure Generated . . .`)
         console.log(`STATUS: Creating package.json . . .`)
@@ -30,13 +30,13 @@ exports.reactApp = function() {
 
                 console.log(`\n || INSTALLATION SUCCESSFUL || \n`)
                 console.log(`STATUS: Initiating Development Server . . .`)
-                console.log('Press CTRL + C to stop');
+                console.log('Press CTRL + C to stop')
 
                 exec("npm start", (err, stdout, stderr) => {
-                    if (err) throw err;
-                });
-            });
-        });
-    });
+                    if (err) throw err
+                })
+            })
+        })
+    })
 
 }
